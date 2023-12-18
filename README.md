@@ -16,3 +16,24 @@
 localhost:8080/
 ~~~
 ### Obs: Toda chave estarngeira é testada no postman deve ser colocado o _id no final, assim como está no DTO. Sempre seguir os DTOS
+
+------------------------------------------------
+<div align="left">
+  
+### Para testar o funcionamento do back-end e front-end da aplicação rode a classe MainApplication e verifiquea a conexão acessando a url:
+
+~
+localhost:8080/
+~
+
+### Após verificar, caso tenha conseugido estabelecer uma conexão acesse a githubpage e verifique se consegue visuzalizar ou adicionar dados 
+
+### Caso não consiga, você pode optar por utilizar a extensão live-server e inicar uma conexão pela url 
+
+~
+http://127.0.0.1:5500
+~
+
+### Verifque se conseguiu acessar a url acima com sucesso e repita o passo anterior
+
+### Obs: Toda chave estrangeira é testada no postman e deve ser colocado o _id no final, assim como está no DTO. Sempre seguir os DTOS
