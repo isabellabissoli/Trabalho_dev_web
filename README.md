@@ -36,4 +36,4 @@ http://127.0.0.1:5500
 
 ### Verifque se conseguiu acessar a url acima com sucesso e repita o passo anterior
 
-### Obs: Toda chave estrangeira é testada no postman e deve ser colocado o _id no final, assim como está no DTO. Sempre seguir os DTOS
+### Obs: Depois de adicionar um novo item, atualize a pagina
