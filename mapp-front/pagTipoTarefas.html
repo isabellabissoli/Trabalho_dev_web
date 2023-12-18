@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="module" src="/js/client.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/postData.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            postTipoTarefaData();
+        });
+    </script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/mapp3.png" type="png">
+    <title>Mapp</title>
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <img class="logo" src="img/mapp2.png" onclick="window.location.href='home.html'" style="cursor: pointer;" alt="Logo Mapp">
+                <nav>
+                    <ul>
+                        <li><a href="pagEpicos.html">Épicos</a></li>
+                        <li><a href="pagTipoEpicos.html">Tipo Épico</a></li>
+                        <li><a href="pagTarefas.html">Tarefas</a></li>
+                        <li><a href="pagTipoTarefas.html">Tipo Tarefa</a></li>
+                        <li><a href="pagHU.html">Histórias de Usuário</a></li>
+                        <li><a href="pagTipoHU.html">Tipo História de Usuário</a></li>
+                        <li><a href="pagProjetos.html">Projetos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <main>
+                <div class="sessao-bemvindo-content">
+                    <h1>Tipo Tarefa</h1>
+                </div>
+                <div class="botoes-crud">
+                    <button class="deletar"><img src="img/remove.png" alt="remove"></button>
+                    <button class="editar"><img src="img/edit.png" alt="edit"></button>
+
+                </div>
+                <section class="sessao-objeto" id="sessaoTipoTarefa">
+                    <table class="objeto" id="tabelaTipoTarefa">
+                        <tr>
+                            <th>id</th>
+                            <th>Descrição</th>
+                            <th>Tipo HU</th>
+                            <th>Tipo tarefa Pai</th>
+  
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>tipo1</td>
+                            <td>Descrição tipo tarefa</td>
+                        </tr>
+                      </table>
+                </section>
+                <section id="cadTipoTarefa" class="sessaoCadastro">
+                    <h2>Cadastrar Tipo Tarefa</h2>
+                    <form id="formTipoTarefa" class="formCadastro">
+                        <textarea name="descricao" placeholder="Escreva a Descrição"></textarea>
+                        <input type="number" name="tipoHistoriaUsuario_id" placeholder="Id da história de usuário">
+                        <input type="number" name="tipoTarefaPai_id" placeholder="Id do Tipo de Tarefa Pai">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+                <footer>
+                    <p>mapp @ 2023</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

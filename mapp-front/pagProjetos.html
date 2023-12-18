@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styleProjeto.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="module" src="/js/client.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/postData.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            postProjetoData();
+        });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/mapp3.png" type="png">
+    <title>Mapp</title>
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <img class="back-button" src="img/left-arrow.png" onclick="window.location.href='pagEpicos.html'" style="cursor: pointer;" alt="Back-button" > 
+            <img class="logo" src="img/mapp2.png" alt="Logo Mapp">
+        </div>
+        <div class="content">
+            <main>
+                <div class="sessao-bemvindo-content">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="botoes-crud">
+                    <button class="deletar"><img src="img/remove.png" alt="remove"></button>
+                    <button class="editar"><img src="img/edit.png" alt="edit"></button>
+                </div>
+                <section class="sessao-objeto" id="sessaoProjeto">
+                    <table class="objeto" id="tabelaProjeto">
+                        <tr>
+                          <th>id</th>
+                          <th>Titulo</th>
+                        </tr>
+                          <td>1</td>
+                          <td><a href="">Projeto1</a></td>
+                        </tr>
+                      </table>
+                </section>
+                <section id="cadProjeto" class="sessaoCadastro">
+                    <h2>Cadastrar Projeto</h2>
+                    <form id="formProjeto" class="formCadastro">
+                        <input type="text" id="nome" name="nome" placeholder="Titulo">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+                <footer>
+                    <p>mapp @ 2023</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

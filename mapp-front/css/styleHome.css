@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    color: #373A3C;
+    scroll-behavior: smooth;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Header */
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #F2F3F8;
+}
+
+.cabecalho-imagem{
+    height: 75px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: rgb(78, 73, 70);
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.cabecalho-menu-item:hover{
+    transform: scale(1.05);
+    color: rgb(191, 25, 25);
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 150px;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;     
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Poppins', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color: #d45b5b;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-weight: 400px;
+    font-size: 20px;
+    color: rgb(97, 85, 82);
+}
+
+
+.conteudo-principal-escrito-botao{
+    background-color: #f1f0f0;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200px;
+    font-size: 20px;
+    transition: 0.15s ease-in-out; 
+    cursor: pointer; 
+}
+
+.conteudo-principal-escrito-botao:hover{
+    transform: scale(1.05);
+    background-color: #a4f0a2;
+}
+
+.conteudo-principal-img-github{
+    height: 48px;
+    padding-top: 32px;
+}
+
+.conteudo-principal-img-github:hover{
+    transform: scale(1.25);
+}
+
+/* footer */
+.rodape{
+    padding: 48px;
+    border-top: 0.4px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.rodape-imagem{
+    height: 48px;
+    display: block;
+    padding: 12px;
+    margin: 0px auto; 
+}
